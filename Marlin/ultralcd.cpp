@@ -586,6 +586,7 @@ static void lcd_prepare_menu()
     MENU_ITEM(gcode, MSG_DISABLE_STEPPERS, PSTR("M84"));
     MENU_ITEM(gcode, MSG_AUTO_HOME, PSTR("G28"));
     MENU_ITEM(function, MSG_SET_HOME_OFFSETS, lcd_set_home_offsets);
+
     //MENU_ITEM(gcode, MSG_SET_ORIGIN, PSTR("G92 X0 Y0 Z0"));
 #if TEMP_SENSOR_0 != 0
   #if TEMP_SENSOR_1 != 0 || TEMP_SENSOR_2 != 0 || TEMP_SENSOR_BED != 0
@@ -606,6 +607,10 @@ static void lcd_prepare_menu()
     }
 #endif
     MENU_ITEM(submenu, MSG_MOVE_AXIS, lcd_move_menu);
+    //MENU_ITEM(gcode, "Druckbett kalibrieren", PSTR("G28\nG1 Y135 X60 Z0\nM0\nG1 Y200 X191\nM0;G1 Y70 X191;M0;G1 Y135 X60; M0;G1 Y200 X191;M0;G1 Y70 X191;M0;G28;"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_1, PSTR("G1 Y135 X60 Z0"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_2, PSTR("G1 Y200 X191 Z0"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_3, PSTR("G1 Y70 X191 Z0"));    
     END_MENU();
 }
 

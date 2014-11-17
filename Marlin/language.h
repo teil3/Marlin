@@ -264,6 +264,9 @@
 	#define MSG_BABYSTEP_Y "Babystep Y"
 	#define MSG_BABYSTEP_Z "Babystep Z"
 	#define MSG_ENDSTOP_ABORT "Endstop abort"
+        #define MSG_CALIB_SCREW_1 "Calib. Position 1"
+        #define MSG_CALIB_SCREW_2 "Calib. Position 2"
+        #define MSG_CALIB_SCREW_3 "Calib. Position 3"
 
 #endif
 
