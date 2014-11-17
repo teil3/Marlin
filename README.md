@@ -1,5 +1,5 @@
 ==========================
-Marlin 3D Printer Firmware
+Marlin 3D Printer Firmware (Preconfigured for the use with Teilmachr302e)
 ==========================
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/2224/badge.svg)](https://scan.coverity.com/projects/2224)
 [![Travis Build Status](https://travis-ci.org/ErikZalm/Marlin.svg)](https://travis-ci.org/ErikZalm/Marlin)
