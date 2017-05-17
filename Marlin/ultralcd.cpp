@@ -139,6 +139,8 @@ uint8_t lcdDrawUpdate = LCDVIEW_CLEAR_CALL_REDRAW; // Set when the LCD needs to 
   #if ENABLED(DELTA_CALIBRATION_MENU)
     static void lcd_delta_calibrate_menu();
   #endif
+  //teilmachr bed calibrateion menu
+  static void lcd_bed_calibrate_menu();
 
   #if ENABLED(MANUAL_BED_LEVELING)
     #include "mesh_bed_leveling.h"
@@ -1272,6 +1274,20 @@ void kill_screen(const char* lcd_msg) {
     }
 
   #endif // DELTA_CALIBRATION_MENU
+//calib menu for teilmachr1003
+static void lcd_bed_calibrate_menu()
+{
+    START_MENU();
+    MENU_ITEM(back, MSG_MAIN, lcd_main_menu);
+    MENU_ITEM(gcode, MSG_AUTO_HOME, PSTR("G28"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_1, PSTR("G1 F1200 Y0 X0 Z0"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_2, PSTR("G1 F1200 Y0 X82 Z0"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_3, PSTR("G1 F1200 Y369 X820 Z0"));
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_4, PSTR("G1 F1200 Y369 X0 Z0"));    
+    MENU_ITEM(gcode, MSG_CALIB_SCREW_5, PSTR("G1 F1200 Y158 X410 Z0"));  
+    END_MENU();
+}
+
 
   float move_menu_scale;
 
@@ -1475,6 +1491,7 @@ void kill_screen(const char* lcd_msg) {
     MENU_ITEM(back, MSG_MAIN);
     MENU_ITEM(submenu, MSG_TEMPERATURE, lcd_control_temperature_menu);
     MENU_ITEM(submenu, MSG_MOTION, lcd_control_motion_menu);
+    MENU_ITEM(submenu, MSG_CALIB_MENU_LABEL, lcd_bed_calibrate_menu);
     MENU_ITEM(submenu, MSG_VOLUMETRIC, lcd_control_volumetric_menu);
 
     #if HAS_LCD_CONTRAST

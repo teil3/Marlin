@@ -169,6 +169,12 @@
 #define MSG_DELTA_CALIBRATE_Z               "Kalibriere Z"
 #define MSG_DELTA_CALIBRATE_CENTER          "Kalibriere Mitte"
 
+#define MSG_CALIB_SCREW_1                   "Calib. Position 1"
+#define MSG_CALIB_SCREW_2                   "Calib. Position 2"
+#define MSG_CALIB_SCREW_3                   "Calib. Position 3"
+#define MSG_CALIB_SCREW_4                   "Calib. Position 4"
+#define MSG_CALIB_SCREW_5                   "Calib. Position 5"
+
 #define MSG_INFO_MENU                       "Über den Drucker"
 #define MSG_INFO_PRINTER_MENU               "Drucker Info"
 #define MSG_INFO_STATS_MENU                 "Drucker Stats"
