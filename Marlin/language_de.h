@@ -44,7 +44,8 @@
 #define MSG_AUTO_HOME                       "Home" // G28
 #define MSG_LEVEL_BED_HOMING                "Homing XYZ"
 #define MSG_LEVEL_BED_WAITING               "Klick für Start"
-#define MSG_LEVEL_BED_DONE                  "Fertig"
+#define MSG_LEVEL_BED_NEXT_POINT            "nächster Punkt"
+#define MSG_LEVEL_BED_DONE                  "Bett Leveling Fertig"
 #define MSG_LEVEL_BED_CANCEL                "Abbruch"
 #define MSG_SET_HOME_OFFSETS                "Setze Homeoffsets"
 #define MSG_HOME_OFFSETS_APPLIED            "Offsets aktiv"

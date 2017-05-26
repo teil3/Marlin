@@ -89,7 +89,7 @@
 #define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE2 WEBSITE_URL
 
 //
 // *** VENDORS PLEASE READ *****************************************************
@@ -102,7 +102,7 @@
 // boot image unmodified. For an example have a look at the bq Hephestos 2
 // example configuration folder.
 //
-//#define SHOW_CUSTOM_BOOTSCREEN
+#define SHOW_CUSTOM_BOOTSCREEN
 // @section machine
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
@@ -605,11 +605,11 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MIN_POS -29
+#define X_MIN_POS -30
 #define Y_MIN_POS -21
 #define Z_MIN_POS 0
-#define X_MAX_POS 249
-#define Y_MAX_POS 249
+#define X_MAX_POS 221
+#define Y_MAX_POS 225
 #define Z_MAX_POS 200
 
 //===========================================================================
