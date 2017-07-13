@@ -48,11 +48,7 @@
    * here we define this default string as the date where the latest release
    * version was tagged.
    */
-<<<<<<< HEAD
-  #define STRING_DISTRIBUTION_DATE "2016-07-31 12:00"
-=======
   #define STRING_DISTRIBUTION_DATE "2017-05-12 12:00"
->>>>>>> refs/tags/1.1.1
 
   /**
    * Required minimum Configuration.h and Configuration_adv.h file versions.

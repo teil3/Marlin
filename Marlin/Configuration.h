@@ -477,15 +477,15 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,192}  // default steps per unit for 302
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,192, 192}  // default steps per unit for 503
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,192}  // default steps per unit for 302
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,192 }  // default steps per unit for 503
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 6, 20, 20 }
+#define DEFAULT_MAX_FEEDRATE          { 300, 300, 6, 20 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -493,7 +493,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 10000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -897,7 +897,7 @@
  * Use the LCD controller for bed leveling
  * Requires MESH_BED_LEVELING or PROBE_MANUALLY
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MBL_Z_STEP 0.025    // Step size while manually probing Z axis.
