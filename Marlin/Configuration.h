@@ -331,7 +331,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-#define PIDTEMPBED
+//#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -477,6 +477,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 4266.666666667, 192 }
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,192}  // default steps per unit for 302
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,192 }  // default steps per unit for 503
 
