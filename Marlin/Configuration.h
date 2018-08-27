@@ -478,7 +478,8 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,10000} // choco
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,2000} // choco
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,90} // choco
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,4304.3,60} // choco Teilmachr3.1
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {160,160,3200,60} // choco Teilmachr503
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -486,7 +487,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
 
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 3, 50000}
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 3, 200}
 
 
 /**
